@@ -64,7 +64,7 @@ Here is how this works:
 
 Find the public IP address of the Public DC/OS node that is running the Marathon-LB load balancer. Run the following command (make sure Marathon-LB is running first, with the command 'dcos task marathon-lb'):
 
-TODO: Fix public IP script belowe
+TODO: Fix public IP script below
 ```
 MARATHON_PUB_IP=$(priv_ip=$(dcos task marathon-lb | grep -v HOST | awk '{print $2}') && dcos node ssh --option StrictHostKeyChecking=no --option LogLevel=quiet --master-proxy --private-ip=$priv_ip "curl -s ifconfig.co | sed 's/\r//g'"); echo && echo "MARATHON_PUB_IP:   $MARATHON_PUB_IP"
 ```
