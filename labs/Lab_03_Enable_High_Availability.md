@@ -38,7 +38,7 @@ deploy (serial strategy) (COMPLETE)
 
 **Notice that in high availability mode, DC/OS has started 3 etcd peers and 3 kube-control-plane processes. If any of these processes die, DC/OS will monitor their health and automatically restart them.**
 
-### OPTIONAL: Making Kubernetes Highly Available through the CLI
+### OPTIONAL ALTERNATIVE: Making Kubernetes Highly Available through the CLI
 
 Grab the Kubernetes options.json file:
 
