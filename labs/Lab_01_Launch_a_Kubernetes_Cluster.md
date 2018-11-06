@@ -162,7 +162,9 @@ dcos security org users grant kubernetes-cluster1  dcos:mesos:master:framework:r
 dcos security org users grant kubernetes-cluster1  dcos:mesos:agent:framework:role:slave_public read
 ```
 
-Use the service account and secret when you launch a Kubernetes cluster.  Run the following command to setup a package installer options file that references the service account and secret.
+Now, we will launch a Kubernetes cluster using the service account and secret we just created. Copy and paste the command below into your terminal to create a package installer options file that references the service account and secret we just created.
+
+**Be sure to copy and paste the entire code snippet below (including the final line containing `EOF`)**
 
 ```
 cat > cluster1-options.json << EOF
@@ -192,7 +194,7 @@ DC/OS Kubernetes is being installed!
 Kubernetes cluster '[kubernetes-cluster1]' is being created
 ```
 
-You can see the installation runbook automation and status of installation of each component with this command
+Your new Kubernetes cluster will take a few minutes to spin up. You can see the installation runbook automation and monitor the status of installation of each component with the command below:
 
 ```
 dcos kubernetes manager plan status deploy --name=kubernetes-cluster1
@@ -234,8 +236,6 @@ deploy (serial strategy) (COMPLETE)
 
 ### Step 4. Install Kubernetes kubectl Command Line
 
-Install the Kubernetes command line by following instructions [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-
 **For Macs** with brew installed the command is
 
 ```
@@ -269,7 +269,9 @@ sudo apt-get update
 sudo apt-get install -y kubectl
 ```
 
-Confirm that kubectl is installed and in path /usr/local/bin (it will say it is not connected to dcos cluster yet which is ok)
+If your OS is not listed above, or if you need additional help installing kubectl please see [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
+
+Confirm that kubectl is installed and in path `/usr/local/bin` using the command below. (Kubectl will say it is not connected to a dcos cluster yet, which is expected.)
 
 ```
 kubectl version
