@@ -8,7 +8,7 @@ Run the commands below to create the SSL keys, service account, and secret for y
 
 ```
 dcos security org service-accounts keypair private-key.pem public-key.pem
-dcos security org service-accounts create -p public-key.pem -d 'Kubernetes cluster 2 service account' kubernetes-cluster2
+dcos security org service-accounts create -p public-key.pem -d "Kubernetes cluster 2 service account" kubernetes-cluster2
 dcos security secrets create-sa-secret private-key.pem kubernetes-cluster2 kubernetes-cluster2/sa
 ```
 

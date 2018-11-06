@@ -10,11 +10,10 @@ If you have a Macbook or Linux laptop and you don't have any restrictions on acc
 
 Download the id_rsa key from the workshop cluster Github location at:
 
-SSH Key TODO: LINK TO SSH KEY GOES HERE
+https://github.com/tbaums/rccl-k8s/blob/master/keys/rccl-k8s
 
-If using Windows and Putty Telnet, use the putty key at:  
+If using Windows and Putty Telnet, you will need to download the key above and convert it to a `.ppk` file. Please see the instructor with questions.  
 
-TODO: LINK TO PUTTY KEY GOES HERE
 
 
 
@@ -129,7 +128,7 @@ Next, run the following commands to create the SSL keys, the service account and
 
 ```
 dcos security org service-accounts keypair private-key.pem public-key.pem
-dcos security org service-accounts create -p public-key.pem -d 'Kubernetes cluster 1 service account' kubernetes-cluster1
+dcos security org service-accounts create -p public-key.pem -d "Kubernetes cluster 1 service account" kubernetes-cluster1
 dcos security secrets create-sa-secret private-key.pem kubernetes-cluster1 kubernetes-cluster1/sa
 ```
 
