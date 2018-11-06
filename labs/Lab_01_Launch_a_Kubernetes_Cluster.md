@@ -12,11 +12,6 @@ Download the id_rsa key from the workshop cluster Github location at:
 
 SSH Key TODO: LINK TO SSH KEY GOES HERE
 
-SSH to the bootstrap server:
-```
-ssh -i ./id_rsa centos@<your bootstrap server ip address>
-```
-
 If using Windows and Putty Telnet, use the putty key at:  
 
 TODO: LINK TO PUTTY KEY GOES HERE
@@ -25,9 +20,17 @@ TODO: LINK TO PUTTY KEY GOES HERE
 
 ### Step 1.b
 
+If your laptop can access any servers on the internet without restriction, please install the DC/OS CLI locally on your machine. If your laptop is restricted, please SSH into your "bootstrap" server and install the DC/OS CLI there. For the rest of the course, you will execute DC/OS command line commands from your bootstrap server (located within your VPC).
+
+To SSH to the bootstrap server:
+```
+ssh -i ./id_rsa centos@<your bootstrap server ip address>
+```
+
+
 Set up the DC/OS command line by clicking on the top left and choosing "Install CLI"
 
-![CLI](https://i.imgur.com/p4kqIj6.png)
+![CLI](https://imgur.com/a/3JB9Qih)
 
 Click in the dialogue box to copy the command
 
