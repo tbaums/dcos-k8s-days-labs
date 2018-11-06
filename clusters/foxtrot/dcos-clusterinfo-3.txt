@@ -1,0 +1,32 @@
+
+[cluster]
+foxtrot-rccl-k8s-3
+
+[cluster-address]
+foxtrot-rccl-k8s-3-638515881.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+184.72.147.229
+
+[masters]
+54.88.140.3
+
+[private-agents]
+34.203.233.177
+18.208.197.97
+35.174.107.56
+107.21.189.214
+18.206.233.18
+34.204.189.2
+18.209.112.34
+
+[public-agents]
+100.24.48.124
+18.215.118.1
+
+[public-agent-lb]
+ext-foxtrot-rccl-k8s-3-882656859.us-east-1.elb.amazonaws.com
+
