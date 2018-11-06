@@ -134,7 +134,7 @@ dcos security secrets create-sa-secret private-key.pem kubernetes-cluster1 kuber
 
 Once completed, you should be able to see the secret by clicking on the `Secrets` tab in the left navigation pane.
 
-[secrets]()
+![secrets](https://github.com/tbaums/rccl-k8s/blob/master/screenshots/dcos-view-secrets.png)
 
 You should also grant the correct permissions to allow the new service account to launch and view Kubernetes clusters. Run the following ACL commands:
 
