@@ -40,7 +40,7 @@ dcos security org users grant kubernetes-cluster2  dcos:mesos:master:framework:r
 dcos security org users grant kubernetes-cluster2  dcos:mesos:agent:framework:role:slave_public read
 ```
 
-###Step 3. Launch the second Kubernetes cluster
+### Step 3. Launch the second Kubernetes cluster
 
 Now, we will launch a Kubernetes cluster using the service account and secret we just created. Copy and paste the command below into your terminal to create a package installer options file that references the service account and secret we just created.
 
@@ -72,7 +72,7 @@ dcos kubernetes manager plan status deploy --name=kubernetes-cluster2
 
 When all the Kubernetes cluster elements report a status of `COMPLETE`, your new cluster is ready to use.
 
-###Step 4. Configure Marathon-LB to expose Kubernetes API
+### Step 4. Configure Marathon-LB to expose Kubernetes API
 
 Run the commands below:
 
@@ -114,7 +114,7 @@ Next, deploy the proxy with the command below:
 dcos marathon app add cluster2-kubectl-proxy.json
 ```
 
-###Step 5. Configure kubectl for the second Kubernetes cluster
+### Step 5. Configure kubectl for the second Kubernetes cluster
 
 Configure kubectl to connect to the Kubernetes cluster running on  DC/OS using the following commands:
 
@@ -126,7 +126,7 @@ dcos kubernetes cluster kubeconfig \
     --apiserver-url=https://<public agent where Marathon-LB is running IP address>:6444
 ```
 
-###Step 6. Expose the second Kubernetes dashboard
+### Step 6. Expose the second Kubernetes dashboard
 
 (NOTE: if you are using a bootstrap server to access your cluster then the local proxy will not give you access to the Dashboard.)
 
