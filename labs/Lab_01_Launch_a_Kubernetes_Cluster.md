@@ -99,7 +99,9 @@ The Mesosphere Kubernetes Engine service is being installed.
 
 You can check to see if the control manager is installed completely by running the following command:
 
+```
 dcos kubernetes manager plan status deploy
+```
 
 ```
 deploy (serial strategy) (COMPLETE)
@@ -138,27 +140,7 @@ Once completed, you should be able to see the secret by clicking on the `Secrets
 You should also grant the correct permissions to allow the new service account to launch and view Kubernetes clusters. Run the following ACL commands:
 
 ```
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:framework:role:kubernetes-cluster1-role create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:task:user:root create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:agent:task:user:root create
-
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:reservation:role:kubernetes-cluster1-role create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:reservation:principal:kubernetes-cluster1 delete
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:volume:role:kubernetes-cluster1-role create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:volume:principal:kubernetes-cluster1 delete
-
-dcos security org users grant kubernetes-cluster1  dcos:secrets:default:/kubernetes-cluster1/* full
-dcos security org users grant kubernetes-cluster1  dcos:secrets:list:default:/kubernetes-cluster1 read
-
-dcos security org users grant kubernetes-cluster1  dcos:adminrouter:ops:ca:rw full
-dcos security org users grant kubernetes-cluster1  dcos:adminrouter:ops:ca:ro full
-
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:framework:role:slave_public/kubernetes-cluster1-role create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:framework:role:slave_public/kubernetes-cluster1-role read
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:reservation:role:slave_public/kubernetes-cluster1-role create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:volume:role:slave_public/kubernetes-cluster1-role create
-dcos security org users grant kubernetes-cluster1  dcos:mesos:master:framework:role:slave_public read
-dcos security org users grant kubernetes-cluster1  dcos:mesos:agent:framework:role:slave_public read
+dcos security org groups add_user superusers kubernetes-cluster1
 ```
 
 Now, we will launch a Kubernetes cluster using the service account and secret we just created. Copy and paste the command below into your terminal to create a package installer options file that references the service account and secret we just created.
@@ -200,7 +182,7 @@ Your new Kubernetes cluster will take a few minutes to spin up. You can see the 
 ```
 dcos kubernetes manager plan status deploy --name=kubernetes-cluster1
 ```
-First it will show some Kubernetes components completed, and some started or pending like this:
+First, it will show some Kubernetes components completed, and some started or pending like this:
 
 ```
 $ dcos kubernetes manager plan status deploy --name=kubernetes-cluster1
