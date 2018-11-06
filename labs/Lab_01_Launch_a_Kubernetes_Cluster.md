@@ -30,7 +30,7 @@ ssh -i ./id_rsa centos@<your bootstrap server ip address>
 
 Set up the DC/OS command line by clicking on the top left and choosing "Install CLI"
 
-![CLI](https://imgur.com/a/3JB9Qih)
+![CLI](https://imgur.com/KcLWRmr)
 
 Click in the dialogue box to copy the command
 
