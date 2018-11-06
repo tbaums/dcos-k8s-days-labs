@@ -63,7 +63,6 @@ Once the CLI is installed, confirm that it is installed correctly and connected 
 
 ```
 dcos node
-
 ```
 
 The output should be a list of nodes in the cluster
