@@ -2,7 +2,9 @@
 
 You can choose to make Kubernetes on DC/OS high availability (HA) at the time of deployment. However, you can also make non-HA clusters into HA by editing and saving the configuration. 
 
-In the DC/OS UI under Services, click on your Kubernetes cluster (Not kube-proxy). 
+In the DC/OS UI under Services, click on Kubernetes Cluster 1 (Not kube-proxy). 
+
+![](https://github.com/tbaums/rccl-k8s/blob/master/screenshots/k8s-ha-1.png)
 
 In the top right, click Edit.
 
@@ -10,7 +12,7 @@ In the top right, click Edit.
 
 Under Kubernetes in left hand menu, choose the high availability box
 
-![](https://i.imgur.com/PkGHHlJ.png)
+![](https://github.com/tbaums/rccl-k8s/blob/master/screenshots/select-ha.png)
 
 Save configuration and watch new components come online with the following command or in the GUI. Output should look like below:
 
@@ -34,7 +36,9 @@ deploy (serial strategy) (COMPLETE)
 
 ```
 
-### Making Kubernetes Highly Available through the CLI
+**Notice that in high availability mode, DC/OS has started 3 etcd peers and 3 kube-control-plane processes. If any of these processes die, DC/OS will monitor their health and automatically restart them.**
+
+### OPTIONAL: Making Kubernetes Highly Available through the CLI
 
 Grab the Kubernetes options.json file:
 
@@ -151,5 +155,5 @@ deploy (serial strategy) (COMPLETE)
 └─ public-node (serial strategy) (COMPLETE)
 
 ```
-Notice that in high availability mode, DC/OS has started 3 etcd peers and 3 kube-control-plane processes. If any of these processes die, DC/OS will monitor their health and automatically restart them.
+
 
