@@ -1,0 +1,32 @@
+
+[cluster]
+alpha-rccl-k8s-2
+
+[cluster-address]
+alpha-rccl-k8s-2-288366896.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.86.145.182
+
+[masters]
+54.172.246.136
+
+[private-agents]
+54.173.125.252
+34.200.217.43
+18.234.205.30
+54.236.22.137
+54.89.14.165
+100.24.115.113
+100.24.41.117
+
+[public-agents]
+54.85.39.234
+34.200.225.16
+
+[public-agent-lb]
+ext-alpha-rccl-k8s-2-1408721685.us-east-1.elb.amazonaws.com
+
