@@ -1,6 +1,6 @@
 ## Lab 5 - Running Pods
 
-Note: this is from Kubernetes [documetation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#creating-and-exploring-an-nginx-deployment)
+Note: This content is from the Kubernetes [documetation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#creating-and-exploring-an-nginx-deployment)
 
 ## Creating and exploring an nginx deployment
 
