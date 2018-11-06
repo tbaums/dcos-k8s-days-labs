@@ -1,6 +1,6 @@
 # Lab 1 Launch a Kubernetes  Cluster
 
-The instructor will give you access to IP address and credentials that you will need to SSH into.
+The instructor will give you the IP address and credentials that you will need to SSH into your DC/OS cluster.
 
 ### Step 1. Set Up DC/OS Command Line
 
@@ -8,10 +8,9 @@ The instructor will give you access to IP address and credentials that you will 
 
 If you have a Macbook or Linux laptop and you don't have any restrictions on accessing servers on the internet, you can use the instructions in Step 1.b on your laptop. If you don't then you should login to your cluster's "bootstrap" server and use it as a command line client.
 
-Download the id_rsa key from the workshop cluster github location at:
+Download the id_rsa key from the workshop cluster Github location at:
 
-SSH Key
-https://raw.githubusercontent.com/gregpalmr/mesosphere-kubernetes-workshop/master/clusters/Workshop-Clusters-2018-11-01/keys/id_rsa
+SSH Key TODO: LINK TO SSH KEY GOES HERE
 
 SSH to the bootstrap server:
 ```
@@ -20,17 +19,17 @@ ssh -i ./id_rsa centos@<your bootstrap server ip address>
 
 If using Windows and Putty Telnet, use the putty key at:  
 
-https://raw.githubusercontent.com/gregpalmr/mesosphere-kubernetes-workshop/master/clusters/Workshop-Clusters-2018-11-01/keys/puttykey.ppk
+TODO: LINK TO PUTTY KEY GOES HERE
 
 
 
 ### Step 1.b
 
-Set up the DC/OS command line by clicking on the top left and choosing "install CLI"
+Set up the DC/OS command line by clicking on the top left and choosing "Install CLI"
 
 ![CLI](https://i.imgur.com/p4kqIj6.png)
 
-Click in the dialogue box too copy the command
+Click in the dialogue box to copy the command
 
 ![Copy Command](https://i.imgur.com/3rQ2Unj.png)
 
