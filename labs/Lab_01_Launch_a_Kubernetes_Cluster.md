@@ -218,7 +218,15 @@ deploy (serial strategy) (COMPLETE)
 
 ### Step 4. Install Kubernetes kubectl Command Line
 
-**For Macs** with brew installed the command is
+**For Windows** with `curl` installed the commands are:
+
+```
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/windows/amd64/kubectl.exe
+```
+
+Then, add the binary to your PATH.
+
+**For Macs** with `brew` installed the command is:
 
 ```
 brew install kubectl
