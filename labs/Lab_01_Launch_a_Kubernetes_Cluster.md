@@ -27,6 +27,8 @@ To SSH to the bootstrap server:
 ssh -i ./id_rsa centos@<your bootstrap server ip address>
 ```
 
+**All students continue here:**
+
 
 Set up the DC/OS command line by clicking on the top left and choosing "Install CLI"
 
@@ -46,11 +48,15 @@ curl https://downloads.dcos.io/binaries/cli/linux/x86-64/dcos-1.12/dcos -o dcos 
 chmod +x dcos &&
 sudo mv dcos /opt/bin
 
-Then run the `dcos cluster setup` command for your cluster like this:
+```
 
-NOTE: For this workshop, you must use an HTTPS URL for setting up the cluster with the DC/OS CLI.
+**Note: DC/OS CLI instructions default to `http`. For the purposes of these lab exercises, however, we must set up and attach to our DC/OS clusters using `https`. After installing the CLI, please follow the steps below to detach and reattach to your cluster using `https`:**
 
-dcos cluster setup https://<master node ip addr>
+```
+dcos cluster remove --all
+```
+```
+dcos cluster setup https://<master node IP address>
 ```
 
 Once the CLI is installed, confirm that it is installed correctly and connected to your cluster by running following command
@@ -112,15 +118,23 @@ dcos kubernetes --help
 
 Once the Kubernetes control plan manager is running, you can use it to launch a Kubernetes cluster.  Since you are using the Enterprise version of DC/OS, you can use the DC/OS certificate authoritity to create an SSL key to be used with a DC/OS service account user.
 
-Run the following commands to create the SSL keys, the service account and the secret.
+First, you must install the DC/OS Enterprise CLI, which gives you access to DC/OS Enterprise security features, among other useful tools.
 
 ```
-dcos package install --cli dcos-enterprise-cli --yes
+dcos package install dcos-enterprise-cli --yes
+```
 
+Next, run the following commands to create the SSL keys, the service account and the secret.
+
+```
 dcos security org service-accounts keypair private-key.pem public-key.pem
 dcos security org service-accounts create -p public-key.pem -d 'Kubernetes cluster 1 service account' kubernetes-cluster1
 dcos security secrets create-sa-secret private-key.pem kubernetes-cluster1 kubernetes-cluster1/sa
 ```
+
+Once completed, you should be able to see the secret by clicking on the `Secrets` tab in the left navigation pane.
+
+[secrets]()
 
 You should also grant the correct permissions to allow the new service account to launch and view Kubernetes clusters. Run the following ACL commands:
 
