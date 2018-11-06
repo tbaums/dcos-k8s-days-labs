@@ -1,0 +1,32 @@
+
+[cluster]
+bravo-rccl-k8s-3
+
+[cluster-address]
+bravo-rccl-k8s-3-1416635944.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+18.209.112.209
+
+[masters]
+34.238.131.196
+
+[private-agents]
+18.208.227.19
+34.239.227.124
+107.22.134.73
+54.175.192.222
+52.3.220.218
+34.229.131.197
+54.236.13.93
+
+[public-agents]
+52.55.232.240
+35.153.103.173
+
+[public-agent-lb]
+ext-bravo-rccl-k8s-3-1219048030.us-east-1.elb.amazonaws.com
+
