@@ -94,7 +94,7 @@ dcos kubernetes cluster kubeconfig \
     --insecure-skip-tls-verify \
     --context-name=kubernetes-cluster1 \
     --cluster-name=kubernetes-cluster1 \
-    --apiserver-url=https://${MARATHON_PUB_IP}:6443
+    --apiserver-url=https://<public agent where Marathon-LB is running IP address>:6443
 ```
 
 ### Step 4.b
