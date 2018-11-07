@@ -141,6 +141,7 @@ You should also grant the correct permissions to allow the new service account t
 ```
 dcos security org groups add_user superusers kubernetes-cluster1
 ```
+Note: See below for an example of more granular security settings that more closely resembles what you would use in production ([link](#production-permissions)).
 
 Now, we will launch a Kubernetes cluster using the service account and secret we just created. Copy and paste the command below into your terminal to create a package installer options file that references the service account and secret we just created.
 
@@ -269,5 +270,34 @@ kubectl version
 
 
 -----------
+
+
+### Production Permissions
+
+Below are a set of example permissions for a Kubernetes cluster on DC/OS that more closely resemble what would be used in a production environment. They are provided for illustrative purposes only, and are not required for this lab exercise.
+
+```
+dcos security org users grant kubernetes-cluster dcos:mesos:master:framework:role:kubernetes-cluster-role create
+dcos security org users grant kubernetes-cluster dcos:mesos:master:task:user:root create
+dcos security org users grant kubernetes-cluster dcos:mesos:agent:task:user:root create
+
+dcos security org users grant kubernetes-cluster dcos:mesos:master:reservation:role:kubernetes-cluster-role create
+dcos security org users grant kubernetes-cluster dcos:mesos:master:reservation:principal:kubernetes-cluster delete
+dcos security org users grant kubernetes-cluster dcos:mesos:master:volume:role:kubernetes-cluster-role create
+dcos security org users grant kubernetes-cluster dcos:mesos:master:volume:principal:kubernetes-cluster delete
+
+dcos security org users grant kubernetes-cluster dcos:secrets:default:/kubernetes-cluster/* full
+dcos security org users grant kubernetes-cluster dcos:secrets:list:default:/kubernetes-cluster read
+
+dcos security org users grant kubernetes-cluster dcos:adminrouter:ops:ca:rw full
+dcos security org users grant kubernetes-cluster dcos:adminrouter:ops:ca:ro full
+
+dcos security org users grant kubernetes-cluster dcos:mesos:master:framework:role:slave_public/kubernetes-cluster-role create
+dcos security org users grant kubernetes-cluster dcos:mesos:master:framework:role:slave_public/kubernetes-cluster-role read
+dcos security org users grant kubernetes-cluster dcos:mesos:master:reservation:role:slave_public/kubernetes-cluster-role create
+dcos security org users grant kubernetes-cluster dcos:mesos:master:volume:role:slave_public/kubernetes-cluster-role create
+dcos security org users grant kubernetes-cluster dcos:mesos:master:framework:role:slave_public read
+dcos security org users grant kubernetes-cluster dcos:mesos:agent:framework:role:slave_public read
+```
 
 
