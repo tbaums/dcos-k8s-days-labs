@@ -141,7 +141,7 @@ You should also grant the correct permissions to allow the new service account t
 ```
 dcos security org groups add_user superusers kubernetes-cluster1
 ```
-Note: See below for an example of more granular security settings that more closely resembles what you would use in production ([link](#production-permissions)).
+*Note: See below for an example of more granular security settings that more closely resembles what you would use in production ([link](#production-permissions)).*
 
 Now, we will launch a Kubernetes cluster using the service account and secret we just created. Copy and paste the command below into your terminal to create a package installer options file that references the service account and secret we just created.
 
