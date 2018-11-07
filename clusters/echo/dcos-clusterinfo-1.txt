@@ -1,0 +1,32 @@
+
+[cluster]
+echo-rccl-k8s-1
+
+[cluster-address]
+echo-rccl-k8s-1-19032329.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+18.212.111.173
+
+[masters]
+54.159.34.129
+
+[private-agents]
+35.153.69.17
+54.89.50.141
+34.238.52.59
+34.228.74.120
+54.210.195.129
+34.226.234.84
+18.232.66.144
+
+[public-agents]
+54.208.120.169
+34.200.212.162
+
+[public-agent-lb]
+ext-echo-rccl-k8s-1-956367048.us-east-1.elb.amazonaws.com
+
