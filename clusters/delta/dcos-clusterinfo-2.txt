@@ -1,0 +1,32 @@
+
+[cluster]
+delta-rccl-k8s-2
+
+[cluster-address]
+delta-rccl-k8s-2-1822946188.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.229.182.171
+
+[masters]
+34.201.217.244
+
+[private-agents]
+18.232.135.114
+18.208.210.175
+54.90.64.63
+34.227.222.173
+18.235.233.100
+35.153.143.222
+54.198.7.132
+
+[public-agents]
+54.89.105.192
+34.205.26.216
+
+[public-agent-lb]
+ext-delta-rccl-k8s-2-859848665.us-east-1.elb.amazonaws.com
+
