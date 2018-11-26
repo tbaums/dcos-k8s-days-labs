@@ -10,7 +10,7 @@ If you have a Macbook or Linux laptop and you don't have any restrictions on acc
 
 Download the id_rsa key from the workshop cluster Github location at:
 
-https://github.com/tbaums/rccl-k8s/blob/master/keys/rccl-k8s
+https://github.com/tbaums/dcos-k8s-days-labs/tree/master/keys
 
 If using Windows and Putty Telnet, you will need to download the key above and convert it to a `.ppk` file. Please see the instructor with questions.  
 
