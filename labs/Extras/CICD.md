@@ -43,11 +43,28 @@ Click “OK”
 
 ![](https://i.imgur.com/snQOEAk.png)
 
-## From the CLI
+## Configure Source Code Management
 
-Export the current package configuration into a JSON file called config.json
-
+In the configuration screen, navigate to the “Source Code Management” section, and configure the following entries
 ```
-INPUT COMMAND
+Repository URL: Enter the URL for your forked GitHub repo
+Credentials: Select your previously configured GitHub Credentials
+Click OK/APPLY
+```
+![](https://i.imgur.com/MRtjjH2.png)
+
+## Configure the Build
+
+Navigate to the “Build” section of the configuration page
+```
+-->Add Build Step
+  -->Docker Build and Publish
+```
+Configure the following Entries for Docker Build and Publish:
+```
+Repository Name: Enter your Docker Hub repo name.  If it does not yet exist, it will be created during the deployment
+Tag“$GIT_COMMIT” tells Jenkins to append the build ID number to the Image as its tag
+Registry Credentials: Select your previously created DockerHub Credentials
+If desired, you can select “Poll SCM” and enter   “*/5 * * * *” to poll GitHub for changes every 5 minutes.
 ```
 
