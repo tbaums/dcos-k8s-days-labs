@@ -67,4 +67,4 @@ Tag“$GIT_COMMIT” tells Jenkins to append the build ID number to the Image as
 Registry Credentials: Select your previously created DockerHub Credentials
 If desired, you can select “Poll SCM” and enter   “*/5 * * * *” to poll GitHub for changes every 5 minutes.
 ```
-
+![](https://i.imgur.com/cRrSE4Z.png)
