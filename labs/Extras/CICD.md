@@ -82,5 +82,24 @@ Click !!!APPLY!!! ---> Click !!!SAVE!!!
 
 ![](https://i.imgur.com/RSK1HJB.png)
 
-## Add Post Build Actions
+## Start the Jenkins Build
+
+When saving the project, it will bring you back to the “Project” page.  Click “Build Now” and it will run the deployment.
+If you made some mistakes and it fails, you con get make changes by clicking the “Configure” button 
+
+![](https://i.imgur.com/6xzZ4Bj.png)
+
+## Check Console for Progress
+
+Once the build gets going, go to the Jenkins service in the DC/OS browser page and notice the deployed executor.
+
+You can also drill into the “Console Output” to see the updates to the pull, build, push, deploy.
+
+Assuming everything goes as planned, the console output will end with”finished: SUCCESS”
+
+![](https://i.imgur.com/vQn2Gyb.png)
+
+## Lab Complete
+
+
 
