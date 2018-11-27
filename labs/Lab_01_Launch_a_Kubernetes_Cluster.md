@@ -85,7 +85,9 @@ To launch a Kubernetes cluster, you must first deploy the Mesosphere Kubernetes 
 
 Install the Kubernetes Control Plane Manager with the following command:
 
+```
 dcos package install kubernetes --yes
+```
 
 ```
 By Deploying, you agree to the Terms and Conditions https://mesosphere.com/catalog-terms-conditions/#certified-services
