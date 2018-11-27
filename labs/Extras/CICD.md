@@ -68,3 +68,19 @@ Registry Credentials: Select your previously created DockerHub Credentials
 If desired, you can select “Poll SCM” and enter   “*/5 * * * *” to poll GitHub for changes every 5 minutes.
 ```
 ![](https://i.imgur.com/cRrSE4Z.png)
+
+## Add Post Build Actions
+
+Navigate to the “Post-build Actions” section, select the “Add post-build action”, select “Marathon Deployment” and configure the following:
+```
+Marathon URLEnter “http:///leader.mesos:8080”
+Definition File: Enter the path to the App-Deployment file in the GitHub Repo.  Default is “conf/cd-demo-app.json”
+Under Advanced
+Docker Image: Specifies the image to pull from your DockerHub Repo
+```
+Click !!!APPLY!!! ---> Click !!!SAVE!!!
+
+![](https://i.imgur.com/RSK1HJB.png)
+
+## Add Post Build Actions
+
