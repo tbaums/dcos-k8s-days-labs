@@ -33,6 +33,8 @@ You will need to add two sets of credentials.
 
 GitHub and DockerHub
 
+![](https://i.imgur.com/ZBBxiVw.png)
+
 ## From the CLI
 
 Export the current package configuration into a JSON file called config.json
