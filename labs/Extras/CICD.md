@@ -35,6 +35,14 @@ GitHub and DockerHub
 
 ![](https://i.imgur.com/ZBBxiVw.png)
 
+## Create a new Freeform Project
+
+Opening the Jenkins Web UI and click the “create new jobs” link under the “Welcome to Jenkins” banner
+Select “Freestyle project” and enter a name for your project (lover case letters and “-” only please)
+Click “OK”
+
+![](https://i.imgur.com/snQOEAk.png)
+
 ## From the CLI
 
 Export the current package configuration into a JSON file called config.json
