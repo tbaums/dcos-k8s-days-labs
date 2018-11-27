@@ -11,7 +11,7 @@ Clone CICD Git Repo - (Dan to provide external facing link)
 Instructions
 
 
-![](https://imgur.com/a/zGftaA9)
+![](https://i.imgur.com/R4iyLmx.png)
 
 ## From the CLI
 
