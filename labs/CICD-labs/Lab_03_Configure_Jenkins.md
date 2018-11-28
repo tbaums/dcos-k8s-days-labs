@@ -15,6 +15,8 @@ From your Jenkins UI, select *Credentials*, then select *System*. Click *Global 
 
 In the left navigation pane, select *Add Credentials*. 
 
+![jenkins-add-credentials](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-add-credentials.png)
+
 Add in your personal DockerHub credentials:
 - Username: your personal DockerHub username (not email!)
 - Password: your personal DockerHub password
