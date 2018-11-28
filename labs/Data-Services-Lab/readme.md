@@ -20,12 +20,14 @@ Monitor the deployment of Cassandra:
 watch dcos cassandra plan show deploy
 ```
 You should see something that looks like the following
+```
     deploy (serial strategy) (IN_PROGRESS)
     └─ node-deploy (serial strategy) (IN_PROGRESS)
         ├─ node-0:[server] (COMPLETE)
         ├─ node-0:[init_system_keyspaces] (COMPLETE)
         ├─ node-1:[server] (COMPLETE)
         └─ node-2:[server] (PREPARED)
+```        
 
 Once the deployment is complete, you should see the following:
     deploy (serial strategy) (COMPLETE)
