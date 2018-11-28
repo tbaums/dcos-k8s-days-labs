@@ -6,9 +6,9 @@ In this exercise we will spin up multiple services that work together to provide
 
 
 From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
-```
-dcos package install --yes cassandra
-```
+
+`dcos package install --yes cassandra`
+
 
 Install the DC/OS Kafka package from the Catalog:
 ```
