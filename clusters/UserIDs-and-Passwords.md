@@ -15,3 +15,10 @@ User:     centos
 
 Password: 3xc31510r!  
 
+
+### Grafanna Login
+
+User:     admin
+
+Password: admin
+
