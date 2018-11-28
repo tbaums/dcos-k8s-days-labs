@@ -5,6 +5,11 @@ broadridge-alpha-1
 [cluster-address]
 broadridge-alpha-1-1778510772.us-east-1.elb.amazonaws.com
 
+Centos login:
+User: centos
+Pass: 3xc31510r!
+
+DCOS Login
 User: bootstrapuser
 Pass: deleteme
 
