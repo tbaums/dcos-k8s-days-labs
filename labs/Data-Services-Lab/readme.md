@@ -11,14 +11,11 @@ From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
 
 
 Install the DC/OS Kafka package from the Catalog:
-```
-dcos package install --yes kafka
-```
+`dcos package install --yes kafka`
 
 Monitor the deployment of Cassandra:
-```
-watch dcos cassandra plan show deploy
-```
+`watch dcos cassandra plan show deploy`
+
 You should see something that looks like the following
 ```
     deploy (serial strategy) (IN_PROGRESS)
@@ -30,33 +27,39 @@ You should see something that looks like the following
 ```        
 
 Once the deployment is complete, you should see the following:
+```
     deploy (serial strategy) (COMPLETE)
     └─ node-deploy (serial strategy) (COMPLETE)
         ├─ node-0:[server] (COMPLETE)
         ├─ node-0:[init_system_keyspaces] (COMPLETE)
         ├─ node-1:[server] (COMPLETE)
         └─ node-2:[server] (COMPLETE)
+```        
 
-Hit <Ctrl-c> to exit the watch command and return back to your prompt.
+Hit `<Ctrl-C>` to exit the watch command and return back to your prompt.
 
 Monitor the deployment of Kafka:
-```
-watch dcos kafka plan show deploy
+`watch dcos kafka plan show deploy`
+
+You should see something that looks like the following
 ```
     deploy (serial strategy) (IN_PROGRESS)
     └─ broker (serial strategy) (IN_PROGRESS)
         ├─ kafka-0:[broker] (COMPLETE)
         ├─ kafka-1:[broker] (COMPLETE)
         └─ kafka-2:[broker] (PREPARED)
+```        
 
 Once the deployment is complete, you should see the following:
+```
     deploy (serial strategy) (COMPLETE)
         └─ broker (serial strategy) (COMPLETE)
             ├─ kafka-0:[broker] (COMPLETE)
             ├─ kafka-1:[broker] (COMPLETE)
             └─ kafka-2:[broker] (COMPLETE)
+```            
 
-Hit <Ctrl-c> to exit the watch command and return back to your prompt.
+Hit `<Ctrl-c>` to exit the watch command and return back to your prompt.
 
 Still on your bootstrap node, create a file in the ~/apps directory named tweeter.json with the following contents.
 ```
@@ -102,6 +105,4 @@ Still on your bootstrap node, create a file in the ~/apps directory named tweete
 }
 ```
 Deploy the Tweeter application:
-```
-dcos marathon app add tweeter.json
-```
+`dcos marathon app add tweeter.json`
