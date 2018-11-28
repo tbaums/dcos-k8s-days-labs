@@ -11,9 +11,11 @@ From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
 
 
 Install the DC/OS Kafka package from the Catalog:
+
 `dcos package install --yes kafka`
 
 Monitor the deployment of Cassandra:
+
 `watch dcos cassandra plan show deploy`
 
 You should see something that looks like the following
