@@ -74,17 +74,14 @@ In the *Services* tab of the DC/OS GUI, you should now see Marathon-LB starting 
 ![marathon-booting-up](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/marathon-booting-up.png)
 
 
+## Step 3 - Clone the `cd-demo` repository
 
+Our Jenkins instance will need a GitHub repository to monitor for changes. 
 
+Please sign in to GitHub.com and navigate to https://github.com/mesosphere/cd-demo. 
 
+Once on the `cd-demo` repository homepage, select *Fork* in the upper righthand corner of the page.
 
+![github-fork](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/github-fork.png)
 
-## Step X - Clone the `cd-demo` repository
-
-
-
-Please navigate to https://github.com/mesosphere/cd-demo. 
-
-Clone CICD Git Repo - (Dan to provide external facing link)
-
-Deploy Jenkins in DC/OS (via the UI/Catalog is the easiest)
+You should now see the forked repository in your GitHub account.
