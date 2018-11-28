@@ -67,7 +67,6 @@ Hit `<Ctrl-c>` to exit the watch command and return back to your prompt.
 
 Still on your bootstrap node, create a file in the ~/apps directory named tweeter.json with the following contents.
 ```
-cat > tweeter.json << 'EOF'
 {
    "id": "/tweeter",
    "cmd": "export KAFKA_BROKERS='broker.kafka.l4lb.thisdcos.directory:9092' && until rake cassandra:setup; do sleep 5; done && rails server",
@@ -108,7 +107,6 @@ cat > tweeter.json << 'EOF'
        "HAPROXY_GROUP": "external"
    }
 }
-EOF
 ```
 Deploy the Tweeter application:
 `$ dcos marathon app add tweeter.json`
