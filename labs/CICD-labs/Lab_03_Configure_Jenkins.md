@@ -89,7 +89,7 @@ From within the drop-down menu, select *Marathon Deployment* and click *Advanced
 
 
 Add in the following information:
-- Marathon URL: `http://marathon.mesos:8080`
+- Marathon URL: `http://leader.mesos:8080`
 - Definition file: `conf/cd-demo-app.json`
 - Docker Image: `<your personal DockerHub username (not email!)>/cicd-demo:$GIT_COMMIT`
 
