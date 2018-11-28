@@ -41,6 +41,7 @@ deploy (serial strategy) (COMPLETE)
 Hit `<Ctrl-C>` to exit the watch command and return back to your prompt.
 
 Monitor the deployment of Kafka:
+
 `watch dcos kafka plan show deploy`
 
 You should see something that looks like the following
@@ -146,6 +147,7 @@ Launch the post-tweets app:
 `dcos marathon app add ~/apps/post-tweets.json`
 
 If you refresh Tweeter in your browser, you should see many new tweets have been published.
+
 
 <INSERT IMAGE REFERANCE HERE>
 
