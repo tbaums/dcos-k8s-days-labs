@@ -1,0 +1,31 @@
+
+[cluster]
+broadridge-bravo-2
+
+[cluster-address]
+broadridge-bravo-2-1778182788.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+35.175.227.65
+
+[masters]
+52.91.180.155
+
+[private-agents]
+52.206.237.255
+34.205.85.52
+52.91.235.27
+54.161.20.137
+54.234.97.138
+35.173.250.55
+
+[public-agents]
+54.88.209.173
+34.201.42.127
+
+[public-agent-lb]
+ext-broadridge-bravo-2-368730925.us-east-1.elb.amazonaws.com
+
