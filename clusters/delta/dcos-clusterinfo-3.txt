@@ -1,0 +1,31 @@
+
+[cluster]
+broadridge-delta-3
+
+[cluster-address]
+broadridge-delta-3-203844302.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+35.153.130.172
+
+[masters]
+54.159.55.158
+
+[private-agents]
+52.90.236.8
+18.204.247.97
+18.212.49.231
+54.208.172.254
+100.26.132.29
+35.172.165.237
+
+[public-agents]
+52.91.110.51
+100.26.148.129
+
+[public-agent-lb]
+ext-broadridge-delta-3-480063591.us-east-1.elb.amazonaws.com
+
