@@ -22,7 +22,7 @@ In order to complete these lab exercises, please ensure you have the following:
 
 Within your DC/OS UI, select *Catalog* in the left navigation pane.
 
-![jenkins-select-catalog]()
+![jenkins-select-catalog](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-select-catalog.png)
 
 Select Jenkins from the list of certified packages.
 
@@ -39,6 +39,12 @@ You do not need to change the default configuration settings. Click *Review & Ru
 Lastly, click *Run Service* to initiate your Jenkins deployment.
 
 ![jenkins-run-service]()
+
+You can monitor the Jenkins launch process in your DC/OS Services tab.
+
+## Step 2 - Install Marathon-LB
+
+**Note: If you already have Marathon-LB running in your cluster, please skip this step entirely.**
 
 
 
