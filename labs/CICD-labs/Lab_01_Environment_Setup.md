@@ -26,19 +26,19 @@ Within your DC/OS UI, select *Catalog* in the left navigation pane.
 
 Select Jenkins from the list of certified packages.
 
-![jenkins-select]()
+![jenkins-select](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-select.png)
 
 Select *Review & Run*.
 
-![jenkins-review-and-run]()
+![jenkins-review-and-run](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-review-and-run.png)
 
 You do not need to change the default configuration settings. Click *Review & Run* again.
 
-![jenkins-review-and-run]()
+![jenkins-review-and-run2](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-review-and-run2.png)
 
 Lastly, click *Run Service* to initiate your Jenkins deployment.
 
-![jenkins-run-service]()
+![jenkins-run-service](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-run-service.png)
 
 You can monitor the Jenkins launch process in your DC/OS Services tab.
 
@@ -46,6 +46,32 @@ You can monitor the Jenkins launch process in your DC/OS Services tab.
 
 **Note: If you already have Marathon-LB running in your cluster, please skip this step entirely.**
 
+Marathon-LB is an easy-to-use, HAProxy-based load balancer most commonly used to expose services running on DC/OS to the public Internet.
+
+To install Marathon-LB on DC/OS, first navigate to the *Catalog* tab in your DC/OS UI.
+
+![catalog-tab](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/catalog-tab.png)
+
+
+In the search box, search for `marathon-lb` and select *marathon-lb*.
+
+![marathon-search](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/marathon-search.png)
+
+Next, click *Review & Run* to open the configuration settings for your new Marathon-LB instance.
+
+![marathon-review-and-run](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/marathon-review-and-run.png)
+
+Without making any changes to the configuration, click *Review and Run* again.
+
+![marathon-review-and-run-2](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/marathon-review-and-run-2.png)
+
+As a last step, click *Run Service*.
+
+![marathon-run-service](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/marathon-run-service.png)
+
+In the *Services* tab of the DC/OS GUI, you should now see Marathon-LB starting up.
+
+![marathon-booting-up](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/marathon-booting-up.png)
 
 
 
