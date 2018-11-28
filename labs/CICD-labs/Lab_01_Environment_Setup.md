@@ -82,6 +82,6 @@ Please sign in to GitHub.com and navigate to https://github.com/mesosphere/cd-de
 
 Once on the `cd-demo` repository homepage, select *Fork* in the upper righthand corner of the page.
 
-![github-fork](https://github.com/tbaums/dcos-days-prometheus-grafana-labs/blob/master/screenshots/github-fork.png)
+![github-fork](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/github-fork.png)
 
 You should now see the forked repository in your GitHub account.
