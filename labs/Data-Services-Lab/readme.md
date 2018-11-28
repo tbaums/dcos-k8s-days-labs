@@ -148,7 +148,7 @@ Launch the post-tweets app:
 If you refresh Tweeter in your browser, you should see many new tweets have been published.
 
 
-<INSERT IMAGE REFERANCE HERE>
+![Alt text](tweeter.png?raw=true "Browser Page Screenshot")
 
 
 That’s it for deploying a modern application on DC/OS.  If you have extra time, try scaling the number of nodes for the services you have deployed.
