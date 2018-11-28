@@ -4,11 +4,11 @@
 
 In this exercise we will spin up multiple services that work together to provide a web application called Tweeter. Tweeter, as you guessed from its name, is an application similar to Twitter that allows users to post 140 character messages to other members of the Tweeter community. Tweeter stores tweets in the DC/OS Cassandra service and streams tweets to the Kafka message service.
 
+### Deploy Catalog Services from CLI
 
 From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
 
 `dcos package install --yes cassandra`
-
 
 Install the DC/OS Kafka package from the Catalog:
 
@@ -63,6 +63,8 @@ Once the deployment is complete, you should see the following:
 
 Hit `<Ctrl-c>` to exit the watch command and return back to your prompt.
 
+### Deploy Tweeter Container
+
 Still on your bootstrap node, create a file in the ~/apps directory named tweeter.json with the following contents.
 ```
 {
@@ -108,3 +110,53 @@ Still on your bootstrap node, create a file in the ~/apps directory named tweete
 ```
 Deploy the Tweeter application:
 `dcos marathon app add tweeter.json`
+
+Once you see Tweeter has been successfully launched from the DC/OS GUI or through dcos marathon app list, point your web browser to `http://<public_agent_public_IP:10000` to access the Tweeter UI and post a tweet.
+
+
+### Deploy Bulk Tweets 
+We will now bulk add 100,000 tweets into Tweeter so that we can test the real-time responsiveness of Tweeter. Create a file in the ~/apps directory named post-tweets.json and populate it with the following contents:
+```
+{
+  "id": "/post-tweets",
+  "cmd": "bin/tweet shakespeare-tweets.json http://1.1.1.1:30000",
+  "cpus": 0.25,
+  "mem": 256,
+  "disk": 0,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mesosphere/tweeter",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 0,
+          "servicePort": 10101,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  }
+}
+```
+Launch the post-tweets app:
+
+`dcos marathon app add ~/apps/post-tweets.json`
+
+If you refresh Tweeter in your browser, you should see many new tweets have been published.
+
+<INSERT IMAGE REFERANCE HERE>
+
+
+That’s it for deploying a modern application on DC/OS.  If you have extra time, try scaling the number of nodes for the services you have deployed.
+
+
+
+
+
+
+
+
+
