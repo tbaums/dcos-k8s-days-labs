@@ -20,22 +20,22 @@ Monitor the deployment of Cassandra:
 
 You should see something that looks like the following
 ```
-    deploy (serial strategy) (IN_PROGRESS)
-    └─ node-deploy (serial strategy) (IN_PROGRESS)
-        ├─ node-0:[server] (COMPLETE)
-        ├─ node-0:[init_system_keyspaces] (COMPLETE)
-        ├─ node-1:[server] (COMPLETE)
-        └─ node-2:[server] (PREPARED)
+deploy (serial strategy) (IN_PROGRESS)
+└─ node-deploy (serial strategy) (IN_PROGRESS)
+   ├─ node-0:[server] (COMPLETE)
+   ├─ node-0:[init_system_keyspaces] (COMPLETE)
+   ├─ node-1:[server] (COMPLETE)
+   └─ node-2:[server] (PREPARED)
 ```        
 
 Once the deployment is complete, you should see the following:
 ```
-    deploy (serial strategy) (COMPLETE)
-    └─ node-deploy (serial strategy) (COMPLETE)
-        ├─ node-0:[server] (COMPLETE)
-        ├─ node-0:[init_system_keyspaces] (COMPLETE)
-        ├─ node-1:[server] (COMPLETE)
-        └─ node-2:[server] (COMPLETE)
+deploy (serial strategy) (COMPLETE)
+└─ node-deploy (serial strategy) (COMPLETE)
+   ├─ node-0:[server] (COMPLETE)
+   ├─ node-0:[init_system_keyspaces] (COMPLETE)
+   ├─ node-1:[server] (COMPLETE)
+   └─ node-2:[server] (COMPLETE)
 ```        
 
 Hit `<Ctrl-C>` to exit the watch command and return back to your prompt.
@@ -45,20 +45,20 @@ Monitor the deployment of Kafka:
 
 You should see something that looks like the following
 ```
-    deploy (serial strategy) (IN_PROGRESS)
-    └─ broker (serial strategy) (IN_PROGRESS)
-        ├─ kafka-0:[broker] (COMPLETE)
-        ├─ kafka-1:[broker] (COMPLETE)
-        └─ kafka-2:[broker] (PREPARED)
+deploy (serial strategy) (IN_PROGRESS)
+└─ broker (serial strategy) (IN_PROGRESS)
+   ├─ kafka-0:[broker] (COMPLETE)
+   ├─ kafka-1:[broker] (COMPLETE)
+   └─ kafka-2:[broker] (PREPARED)
 ```        
 
 Once the deployment is complete, you should see the following:
 ```
-    deploy (serial strategy) (COMPLETE)
-        └─ broker (serial strategy) (COMPLETE)
-            ├─ kafka-0:[broker] (COMPLETE)
-            ├─ kafka-1:[broker] (COMPLETE)
-            └─ kafka-2:[broker] (COMPLETE)
+deploy (serial strategy) (COMPLETE)
+└─ broker (serial strategy) (COMPLETE)
+   ├─ kafka-0:[broker] (COMPLETE)
+   ├─ kafka-1:[broker] (COMPLETE)
+   └─ kafka-2:[broker] (COMPLETE)
 ```            
 
 Hit `<Ctrl-c>` to exit the watch command and return back to your prompt.
