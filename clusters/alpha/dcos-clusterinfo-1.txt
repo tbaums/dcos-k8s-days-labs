@@ -1,0 +1,31 @@
+
+[cluster]
+broadridge-alpha-1
+
+[cluster-address]
+broadridge-alpha-1-1778510772.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.211.207.50
+
+[masters]
+18.234.39.48
+
+[private-agents]
+34.228.225.140
+35.175.115.240
+52.55.144.34
+34.236.149.242
+174.129.55.72
+18.206.48.54
+
+[public-agents]
+54.236.13.51
+100.25.255.126
+
+[public-agent-lb]
+ext-broadridge-alpha-1-1764723031.us-east-1.elb.amazonaws.com
+
