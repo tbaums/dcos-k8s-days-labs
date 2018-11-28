@@ -35,6 +35,8 @@ Add in your personal GitHub credentials:
 - Password: your personal GitHub password
 - ID: `GitHub`
 
+When complete, click *OK*.
+
 ![jenkins-add-github-creds](https://github.com/tbaums/dcos-k8s-days-labs/blob/master/labs/CICD-labs/screenshots/jenkins-add-github-creds.png)
 
 ## Step 4 - Create your Jenkins pipeline
