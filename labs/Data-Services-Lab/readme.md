@@ -143,7 +143,7 @@ We will now bulk add 100,000 tweets into Tweeter so that we can test the real-ti
 ```
 Launch the post-tweets app:
 
-`$ dcos marathon app add ~/apps/post-tweets.json`
+`$ dcos marathon app add post-tweets.json`
 
 If you refresh Tweeter in your browser, you should see many new tweets have been published.
 
