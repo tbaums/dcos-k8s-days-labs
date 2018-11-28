@@ -8,15 +8,15 @@ In this exercise we will spin up multiple services that work together to provide
 
 From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
 
-`dcos package install --yes cassandra`
+`$ dcos package install --yes cassandra`
 
 Install the DC/OS Kafka package from the Catalog:
 
-`dcos package install --yes kafka`
+`$ dcos package install --yes kafka`
 
 Monitor the deployment of Cassandra:
 
-`watch dcos cassandra plan show deploy`
+`$ watch dcos cassandra plan show deploy`
 
 You should see something that looks like the following
 ```
@@ -42,7 +42,7 @@ Hit `<Ctrl-C>` to exit the watch command and return back to your prompt.
 
 Monitor the deployment of Kafka:
 
-`watch dcos kafka plan show deploy`
+`$ watch dcos kafka plan show deploy`
 
 You should see something that looks like the following
 ```
@@ -52,7 +52,6 @@ deploy (serial strategy) (IN_PROGRESS)
    ├─ kafka-1:[broker] (COMPLETE)
    └─ kafka-2:[broker] (PREPARED)
 ```        
-
 Once the deployment is complete, you should see the following:
 ```
 deploy (serial strategy) (COMPLETE)
@@ -110,7 +109,7 @@ Still on your bootstrap node, create a file in the ~/apps directory named tweete
 }
 ```
 Deploy the Tweeter application:
-`dcos marathon app add tweeter.json`
+`$ dcos marathon app add tweeter.json`
 
 Once you see Tweeter has been successfully launched from the DC/OS GUI or through dcos marathon app list, point your web browser to `http://<public_agent_public_IP:10000` to access the Tweeter UI and post a tweet.
 
@@ -144,7 +143,7 @@ We will now bulk add 100,000 tweets into Tweeter so that we can test the real-ti
 ```
 Launch the post-tweets app:
 
-`dcos marathon app add ~/apps/post-tweets.json`
+`$ dcos marathon app add ~/apps/post-tweets.json`
 
 If you refresh Tweeter in your browser, you should see many new tweets have been published.
 
