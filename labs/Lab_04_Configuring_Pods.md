@@ -191,6 +191,7 @@ spec:
 Show existing deployments:
 ```
 $ kubectl get deployments
+
 NAME               DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment   4         4         4            4           10m
 ```
