@@ -1,6 +1,18 @@
-## Lab 5 - Running Pods
+## Lab 5 - Configuring Pods
 
 Note: This content is from the Kubernetes [documetation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#creating-and-exploring-an-nginx-deployment)
+
+## Use Kubernetes-cluster1
+
+Kubectl can only control one Kubernetes cluster at a time.  We need to ensure that we have selected the kubernetes-cluster1.  To do this:
+
+```
+$ kubectl config get-contexts
+
+CURRENT   NAME        CLUSTER     AUTHINFO    NAMESPACE
+*         kcluster1   kcluster1   kcluster1
+          kcluster2   kcluster2   kcluster2
+```
 
 ## Creating and exploring an nginx deployment
 
