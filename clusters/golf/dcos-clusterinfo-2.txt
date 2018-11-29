@@ -1,0 +1,31 @@
+
+[cluster]
+broadridge-golf-2
+
+[cluster-address]
+broadridge-golf-2-108812303.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.186.190.61
+
+[masters]
+34.220.195.189
+
+[private-agents]
+34.216.199.67
+54.202.125.169
+54.149.211.12
+35.167.207.247
+54.187.222.17
+34.219.96.221
+
+[public-agents]
+34.217.13.100
+35.167.39.165
+
+[public-agent-lb]
+ext-broadridge-golf-2-830521935.us-west-2.elb.amazonaws.com
+
