@@ -1,0 +1,31 @@
+
+[cluster]
+broadridge-echo-2
+
+[cluster-address]
+broadridge-echo-2-2037993048.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+35.163.63.175
+
+[masters]
+54.190.61.64
+
+[private-agents]
+54.187.146.107
+54.212.238.219
+52.41.71.176
+34.222.45.77
+54.245.212.110
+34.223.250.218
+
+[public-agents]
+34.208.80.184
+52.37.126.25
+
+[public-agent-lb]
+ext-broadridge-echo-2-2034249784.us-west-2.elb.amazonaws.com
+
