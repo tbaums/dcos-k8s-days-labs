@@ -14,6 +14,13 @@ CURRENT   NAME        CLUSTER     AUTHINFO    NAMESPACE
           kcluster2   kcluster2   kcluster2
 ```
 
+If the other cluster is selected then change to kcluster1 (unlike the example above):
+```
+$ kubectl config use-context kcluster1
+
+Switched to context "kcluster1".
+```
+
 ## Creating and exploring an nginx deployment
 
 You can run an application by creating a Kubernetes Deployment object, and you
