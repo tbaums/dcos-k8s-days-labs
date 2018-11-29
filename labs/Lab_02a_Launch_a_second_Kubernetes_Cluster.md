@@ -33,6 +33,10 @@ cat > cluster2-options.json << EOF
     "name": "kubernetes-cluster2",
     "service_account": "kubernetes-cluster2",
     "service_account_secret": "kubernetes-cluster2/sa"
+  },
+  "kubernetes": {
+    "private_node_count": 2,
+    "public_node_count": 1
   }
 }
 EOF
