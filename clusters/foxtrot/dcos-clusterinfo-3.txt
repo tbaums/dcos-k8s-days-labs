@@ -1,0 +1,31 @@
+
+[cluster]
+broadridge-foxtrot-3
+
+[cluster-address]
+broadridge-foxtrot-3-214295668.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.219.165.23
+
+[masters]
+35.166.62.221
+
+[private-agents]
+52.89.133.220
+34.219.232.153
+34.220.127.47
+34.217.214.170
+34.221.81.228
+54.201.189.1
+
+[public-agents]
+52.24.157.190
+54.202.18.20
+
+[public-agent-lb]
+ext-broadridge-foxtrot-3-294107381.us-west-2.elb.amazonaws.com
+
