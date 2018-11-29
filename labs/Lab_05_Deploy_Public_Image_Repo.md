@@ -1,8 +1,8 @@
-## Lab 6 - Create an App from Image Repo
+## Lab 5 - Deploy an App from Image Repo
 
 It is possible to create an app from the Kubernetes Dashboard. 
 
-![](https://i.imgur.com/qQTjTlh.png)
+![]lab5a_sockshop-namespace.jpg
 
 Can use the hello-server image in Google Repo
 
