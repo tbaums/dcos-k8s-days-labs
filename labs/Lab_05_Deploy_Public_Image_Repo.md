@@ -30,7 +30,8 @@ kubectl proxy --port=8002
 
 ### Setup and Deploy the Sock Shop
 
-It is possible to create an app from the Kubernetes Dashboard. 
+Now we can deploy the app from the Kubernetes Dashboard. 
+
 #### Step 1. Create Sock-shop Namespace YAML
 
 Create 'sockshop-namespace.yaml' from the text below:
@@ -80,7 +81,7 @@ Success!
 
 ![Sockshop Success](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5c_successful-deployment.png)
 
-### Login to the Sock Shop website
+### Login to Access the Sock Shop website
 
 Use the public IP for the other DC/OS public agent 
 - The first public IP used was for the DC/OS Marathon-LB
