@@ -87,7 +87,7 @@ Use the public IP for the other DC/OS public agent
 - The first public IP used was for the DC/OS Marathon-LB
 - This agent is running the public kubelet now hosting the Sock Shop website
 
-![Public-IP](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5e_Public-IP.png)
+![Public-IP](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5e_Public-IP-B.png)
 
 http://\<DCOS PUBLIC IP\>:30001
 
