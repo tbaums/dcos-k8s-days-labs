@@ -4,7 +4,7 @@
 
 In this exercise we will spin up multiple services that work together to provide a web application called Tweeter. Tweeter, as you guessed from its name, is an application similar to Twitter that allows users to post 140 character messages to other members of the Tweeter community. Tweeter stores tweets in the DC/OS Cassandra service and streams tweets to the Kafka message service.
 
-###Deploy CASSANDRA Service from CLI
+### Deploy CASSANDRA Service from CLI
 
 From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
 
