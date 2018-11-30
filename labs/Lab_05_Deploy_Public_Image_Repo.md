@@ -55,7 +55,11 @@ and save locally as 'sockshop-deploy.yaml'
 
 #### Step 3. For this application, we need to first create a namespace within the Kubernetes cluster.
 
-Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML or JSON; Select the lab5a_sockshop-namespace.yaml file; then Upload.
+1. Select [+ Create] 
+2. Select tab - [Create from file]
+3. Select [...] to choose YAML or JSON
+4. Select the lab5a_sockshop-namespace.yaml file
+5. Select Upload
 
 ![Sockshop Namespace](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-namespace.png)
 
@@ -63,11 +67,16 @@ Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML 
 
 The sock-shop namespace is selected by default, but ensure that you are within it first.  Green line within screenshot below shows the selected namespace.
 
-Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML or JSON; Select the lab5a_sockshop-deploy.yaml file; then Upload.
+1. Select [+ Create] 
+2. Select tab - [Create from file]
+3. Select [...] to choose YAML or JSON
+4. Select the lab5a_sockshop-deploy.yaml file
+5. Select Upload
 
 ![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
 
 Success!
+
 ![Sockshop Success](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5c_successful-deployment.png)
 
 ### Login to the Sock Shop website
