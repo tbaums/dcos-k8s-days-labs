@@ -1,6 +1,6 @@
-## Lab 5 - Deploy an App from Image Repo
+# Lab 5 - Deploy an App from Image Repo
 
-## Use the Kubernetes-cluster2 K8s Dashboard
+### Use the Kubernetes-cluster2 K8s Dashboard
 
 Ensure that you have connectivity to Kubernetes-cluster2 by pointing your browser to:
 
@@ -28,10 +28,27 @@ To access the dashboard run:
 kubectl proxy --port=8002
 ```
 
+### Setup and Deploy the Sock-Shop
 
-It is possible to create an app from the Kubernetes Dashboard. For this application, we need to create a namespace within the Kubernetes cluster.
+It is possible to create an app from the Kubernetes Dashboard. 
+#### Step 1. Download the 2 Sock-shop YAML files
+
+Give download location...
+
+#### Step 2. For this application, we need to first create a namespace within the Kubernetes cluster.
+
+Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML or JSON; Select the lab5a_sockshop-namespace.yaml file; then Upload.
 
 ![Sockshop Namespace](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-namespace.png)
+
+#### Step 3. Now deploy on Kubernetes.
+
+The sock-shop namespace is selected by default, but ensure that you are within it first.  Green line within screenshot below shows the selected namespace.
+
+Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML or JSON; Select the lab5a_sockshop-deploy.yaml file; then Upload.
+
+![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-deploy.png)
+
 
 Can use the hello-server image in Google Repo
 
