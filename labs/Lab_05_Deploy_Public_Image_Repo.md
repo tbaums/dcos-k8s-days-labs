@@ -34,7 +34,7 @@ Now we can deploy the app from the Kubernetes Dashboard.
 
 #### Step 1. Create Sock-shop Namespace YAML
 
-Create 'sockshop-namespace.yaml' from the text below:
+Locally create 'sockshop-namespace.yaml' from the text below:
 
 ```
 {
@@ -53,7 +53,7 @@ Create 'sockshop-namespace.yaml' from the text below:
 
 Copy raw text from https://github.com/microservices-demo/microservices-demo/blob/master/deploy/kubernetes/complete-demo.yaml
 
-and save locally as 'sockshop-deploy.yaml'
+Save locally as 'sockshop-deploy.yaml'
 
 #### Step 3. For this application, we need to first create a namespace within the Kubernetes cluster.
 
@@ -90,3 +90,14 @@ Use the public IP for the other DC/OS public agent
 http://\<DCOS PUBLIC IP\>:30001
 
 ![Sockshop Page](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5d_sockshop-page.png)
+
+You have now deployed a full website in Kubernetes running on Mesosphere DC/OS.
+
+This website includes 13 containers:
+- 3 Mongo DBs (Cart database, Orders database, User database)
+- 3 Java Apps (Cart app, Order app, Shipping app)
+- 2 MySQL DBs (Catalogue database)
+- 4 Docker Containers (Catalogue app, Front-end app, Payment app, Queue-master app)
+- RabbitMQ
+
+
