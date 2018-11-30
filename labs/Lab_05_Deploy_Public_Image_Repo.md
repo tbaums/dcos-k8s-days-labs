@@ -47,7 +47,7 @@ The sock-shop namespace is selected by default, but ensure that you are within i
 
 Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML or JSON; Select the lab5a_sockshop-deploy.yaml file; then Upload.
 
-![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-deploy.png)
+![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
 
 
 Can use the hello-server image in Google Repo
