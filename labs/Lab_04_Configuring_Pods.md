@@ -9,16 +9,16 @@ Kubectl can only control one Kubernetes cluster at a time.  We need to ensure th
 ```
 $ kubectl config get-contexts
 
-CURRENT   NAME        CLUSTER     AUTHINFO    NAMESPACE
-*         kcluster1   kcluster1   kcluster1
-          kcluster2   kcluster2   kcluster2
+CURRENT   NAME                  CLUSTER               AUTHINFO              NAMESPACE
+ *        kubernetes-cluster1   kubernetes-cluster1   kubernetes-cluster1
+          kubernetes-cluster2   kubernetes-cluster2   kubernetes-cluster2
 ```
 
 If the other cluster is selected then change to kcluster1 (unlike the example above):
 ```
-$ kubectl config use-context kcluster1
+$ kubectl config use-context kubernetes-cluster1
 
-Switched to context "kcluster1".
+Switched to context "kubernetes-cluster1".
 ```
 
 ## Creating and exploring an nginx deployment
