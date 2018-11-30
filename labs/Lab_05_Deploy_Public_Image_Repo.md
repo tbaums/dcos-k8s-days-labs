@@ -28,10 +28,10 @@ To access the dashboard run:
 kubectl proxy --port=8002
 ```
 
-### Setup and Deploy the Sock-Shop
+### Setup and Deploy the Sock Shop
 
 It is possible to create an app from the Kubernetes Dashboard. 
-#### Step 1. Create Sockshop Namespace YAML
+#### Step 1. Create Sock-shop Namespace YAML
 
 Create 'sockshop-namespace.yaml' from the text below:
 
@@ -48,9 +48,10 @@ Create 'sockshop-namespace.yaml' from the text below:
 }
 ```
 
-#### Step 2. Create Sockshop Deploy YAML
+#### Step 2. Create Sock-shop Deploy YAML
 
-Copy from https://github.com/microservices-demo/microservices-demo/blob/master/deploy/kubernetes/complete-demo.yaml
+Copy raw text from https://github.com/microservices-demo/microservices-demo/blob/master/deploy/kubernetes/complete-demo.yaml
+
 and save locally as 'sockshop-deploy.yaml'
 
 #### Step 3. For this application, we need to first create a namespace within the Kubernetes cluster.
@@ -81,8 +82,9 @@ Success!
 
 ### Login to the Sock Shop website
 
-Find the public IP for the DC/OS agent running the public kubelet...
-(It will not be the same IP as the Marathon-LB)
+Use the public IP for the other DC/OS public agent 
+- The first public IP used was for the DC/OS Marathon-LB
+- This agent is running the public kubelet now hosting the Sock Shop website
 
 http://\<DCOS PUBLIC IP\>:30001
 
