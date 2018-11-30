@@ -74,7 +74,7 @@ curl https://raw.githubusercontent.com/microservices-demo/microservices-demo/mas
 
 #### Step 4. Now deploy on Kubernetes.
 
-The sock-shop namespace is selected by default, but ensure that you are within it first.  Green line within screenshot below shows the selected namespace.
+**The sock-shop namespace is selected by default, but ensure that you are within it first.**  Green line within screenshot below shows the selected namespace.
 
 1. Select [+ Create] 
 2. Select tab - [Create from file]
