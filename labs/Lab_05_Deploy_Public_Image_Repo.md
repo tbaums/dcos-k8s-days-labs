@@ -8,20 +8,23 @@ http://127.0.0.1:8002/api/v1/namespaces/kube-system/services/https:kubernetes-da
 
 If the above URL does not work, then the kubectl proxy needs to be restarted.  We need to ensure that we have selected the kubernetes-cluster2.  To do this:
 
+Kubectl can only control one Kubernetes cluster at a time.  We need to ensure that we have selected the kubernetes-cluster2.  To do this:
+
 ```
 $ kubectl config get-contexts
 
-CURRENT   NAME        CLUSTER     AUTHINFO    NAMESPACE
-          kcluster1   kcluster1   kcluster1
-*         kcluster2   kcluster2   kcluster2
+CURRENT   NAME                  CLUSTER               AUTHINFO              NAMESPACE
+          kubernetes-cluster1   kubernetes-cluster1   kubernetes-cluster1
+ *        kubernetes-cluster2   kubernetes-cluster2   kubernetes-cluster2
 ```
 
-If the other cluster is selected then change to kcluster2 (unlike the example above):
+If the other cluster is selected then change to kubernetes-cluster2 (unlike the example above):
 ```
-$ kubectl config use-context kcluster2
+$ kubectl config use-context kubernetes-cluster2
 
-Switched to context "kcluster2".
+Switched to context "kubernetes-cluster2".
 ```
+
 
 To access the dashboard run:
 ```
