@@ -72,6 +72,6 @@ Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML 
 Find the public IP for the DC/OS agent running the public kubelet...
 (It will not be the same IP as the Marathon-LB)
 
-http://<DCOS PUBLIC IP>:30001
+http://\<DCOS PUBLIC IP\>:30001
 
 ![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
