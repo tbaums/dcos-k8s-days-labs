@@ -1,23 +1,34 @@
 ## Lab 5 - Deploy an App from Image Repo
 
-## Use Kubernetes-cluster2
+## Use the Kubernetes-cluster2 K8s Dashboard
 
-Kubectl can only control one Kubernetes cluster at a time.  We need to ensure that we have selected the kubernetes-cluster1.  To do this:
+Ensure that you have connectivity to Kubernetes-cluster2 by pointing your browser to:
+
+http://127.0.0.1:8002/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+
+If the above URL does not work, then the proxy needs to be restarted.  We need to ensure that we have selected the kubernetes-cluster2.  To do this:
 
 ```
 $ kubectl config get-contexts
 
 CURRENT   NAME        CLUSTER     AUTHINFO    NAMESPACE
-*         kcluster1   kcluster1   kcluster1
-          kcluster2   kcluster2   kcluster2
+          kcluster1   kcluster1   kcluster1
+*         kcluster2   kcluster2   kcluster2
 ```
 
-If the other cluster is selected then change to kcluster1 (unlike the example above):
+If the other cluster is selected then change to kcluster2 (unlike the example above):
 ```
-$ kubectl config use-context kcluster1
+$ kubectl config use-context kcluster2
 
-Switched to context "kcluster1".
+Switched to context "kcluster2".
 ```
+
+To access the dashboard run:
+```
+kubectl proxy --port=8002
+```
+
+
 It is possible to create an app from the Kubernetes Dashboard. For this application, we need to create a namespace within the Kubernetes cluster.
 
 ![Sockshop Namespace](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-namespace.png)
