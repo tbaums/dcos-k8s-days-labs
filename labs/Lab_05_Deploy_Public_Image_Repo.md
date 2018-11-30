@@ -2,7 +2,7 @@
 
 It is possible to create an app from the Kubernetes Dashboard. 
 
-[Contribution guidelines for this project](master/screenshots/lab5a_sockshop-namespace.png)
+![Screenshot: Sockshop Namespace][https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-namespace.png]
 
 Can use the hello-server image in Google Repo
 
