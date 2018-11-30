@@ -14,7 +14,7 @@ CURRENT   NAME                  CLUSTER               AUTHINFO              NAME
           kubernetes-cluster2   kubernetes-cluster2   kubernetes-cluster2
 ```
 
-If the other cluster is selected then change to kcluster1 (unlike the example above):
+If the other cluster is selected then change to kubernetes-cluster1 (unlike the example above):
 ```
 $ kubectl config use-context kubernetes-cluster1
 
