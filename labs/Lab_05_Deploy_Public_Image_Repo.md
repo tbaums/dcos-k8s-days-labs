@@ -37,6 +37,7 @@ Now we can deploy the app from the Kubernetes Dashboard.
 Locally create 'sockshop-namespace.yaml' from the text below:
 
 ```
+cat > sockshop-namespace.yaml << EOF
 {
   "kind": "Namespace",
   "apiVersion": "v1",
@@ -47,6 +48,7 @@ Locally create 'sockshop-namespace.yaml' from the text below:
     }
   }
 }
+EOF
 ```
 
 #### Step 2. Create Sock-shop Deploy YAML
