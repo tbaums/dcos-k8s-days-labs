@@ -56,9 +56,11 @@ EOF
 
 #### Step 2. Create Sock-shop Deploy YAML
 
-Copy raw text from https://github.com/microservices-demo/microservices-demo/blob/master/deploy/kubernetes/complete-demo.yaml
+To save 'sockshop-deploy.yaml' locally, run the following command:
 
-Save locally as 'sockshop-deploy.yaml'
+```
+curl https://raw.githubusercontent.com/microservices-demo/microservices-demo/master/deploy/kubernetes/complete-demo.yaml > sockshop-deploy.yaml
+```
 
 #### Step 3. For this application, we need to first create a namespace within the Kubernetes cluster.
 
