@@ -4,15 +4,11 @@
 
 In this exercise we will spin up multiple services that work together to provide a web application called Tweeter. Tweeter, as you guessed from its name, is an application similar to Twitter that allows users to post 140 character messages to other members of the Tweeter community. Tweeter stores tweets in the DC/OS Cassandra service and streams tweets to the Kafka message service.
 
-### Deploy Catalog Services from CLI
+###Deploy CASSANDRA Service from CLI
 
 From your DC/OS CLI, install the DC/OS Cassandra package from the Catalog
 
 `$ dcos package install --yes cassandra`
-
-Install the DC/OS Kafka package from the Catalog:
-
-`$ dcos package install --yes kafka`
 
 Monitor the deployment of Cassandra:
 
@@ -36,15 +32,20 @@ deploy (serial strategy) (COMPLETE)
    ├─ node-0:[init_system_keyspaces] (COMPLETE)
    ├─ node-1:[server] (COMPLETE)
    └─ node-2:[server] (COMPLETE)
-```        
+``` 
 
 Hit `<Ctrl-C>` to exit the watch command and return back to your prompt.
+
+### Install the DC/OS KAFKA package from the Catalog:
+
+`$ dcos package install --yes kafka`
 
 Monitor the deployment of Kafka:
 
 `$ watch dcos kafka plan show deploy`
 
 You should see something that looks like the following
+
 ```
 deploy (serial strategy) (IN_PROGRESS)
 └─ broker (serial strategy) (IN_PROGRESS)
@@ -52,7 +53,9 @@ deploy (serial strategy) (IN_PROGRESS)
    ├─ kafka-1:[broker] (COMPLETE)
    └─ kafka-2:[broker] (PREPARED)
 ```        
+
 Once the deployment is complete, you should see the following:
+
 ```
 deploy (serial strategy) (COMPLETE)
 └─ broker (serial strategy) (COMPLETE)
@@ -65,7 +68,7 @@ Hit `<Ctrl-c>` to exit the watch command and return back to your prompt.
 
 ### Deploy Tweeter Container
 
-Still on your bootstrap node, create a file in the ~/apps directory named tweeter.json with the following contents.
+Still on your bootstrap node, create a file (vi?) named tweeter.json with the following contents.
 ```
 {
    "id": "/tweeter",
@@ -108,11 +111,12 @@ Still on your bootstrap node, create a file in the ~/apps directory named tweete
    }
 }
 ```
+
 Deploy the Tweeter application:
+
 `$ dcos marathon app add tweeter.json`
 
 Once you see Tweeter has been successfully launched from the DC/OS GUI or through dcos marathon app list, point your web browser to `http://<public_agent_public_IP:10000` to access the Tweeter UI and post a tweet.
-
 
 ### Deploy Bulk Tweets 
 We will now bulk add 100,000 tweets into Tweeter so that we can test the real-time responsiveness of Tweeter. Create a file in the ~/apps directory named post-tweets.json and populate it with the following contents:
@@ -141,6 +145,7 @@ We will now bulk add 100,000 tweets into Tweeter so that we can test the real-ti
   }
 }
 ```
+
 Launch the post-tweets app:
 
 `$ dcos marathon app add post-tweets.json`
