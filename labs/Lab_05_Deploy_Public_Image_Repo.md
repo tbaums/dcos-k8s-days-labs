@@ -31,9 +31,7 @@ kubectl proxy --port=8002
 ### Setup and Deploy the Sock-Shop
 
 It is possible to create an app from the Kubernetes Dashboard. 
-#### Step 1. Have the 2 Sock-shop YAML files local
-
-##### Step 1a. Sockshop Namespace YAML
+#### Step 1. Create Sockshop Namespace YAML
 
 Create 'sockshop-namespace.yaml' from the text below:
 
@@ -50,18 +48,18 @@ Create 'sockshop-namespace.yaml' from the text below:
 }
 ```
 
-##### Step 1b. Sockshop Deploy YAML
+#### Step 2. Create Sockshop Deploy YAML
 
 Copy from https://github.com/microservices-demo/microservices-demo/blob/master/deploy/kubernetes/complete-demo.yaml
 and save locally as 'sockshop-deploy.yaml'
 
-#### Step 2. For this application, we need to first create a namespace within the Kubernetes cluster.
+#### Step 3. For this application, we need to first create a namespace within the Kubernetes cluster.
 
 Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML or JSON; Select the lab5a_sockshop-namespace.yaml file; then Upload.
 
 ![Sockshop Namespace](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-namespace.png)
 
-#### Step 3. Now deploy on Kubernetes.
+#### Step 4. Now deploy on Kubernetes.
 
 The sock-shop namespace is selected by default, but ensure that you are within it first.  Green line within screenshot below shows the selected namespace.
 
@@ -69,9 +67,11 @@ Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML 
 
 ![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
 
+### Login to the Sock Shop website
 
-Can use the hello-server image in Google Repo
+Find the public IP for the DC/OS agent running the public kubelet...
+(It will not be the same IP as the Marathon-LB)
 
-```
-gcr.io/google-samples/hello-app:1.0
-```
+http://<DCOS PUBLIC IP>:30001
+
+![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
