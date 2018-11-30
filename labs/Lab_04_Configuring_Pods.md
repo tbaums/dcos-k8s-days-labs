@@ -1,4 +1,4 @@
-## Lab 5 - Configuring Pods
+## Lab 4 - Configuring Pods
 
 Note: This content is from the Kubernetes [documetation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#creating-and-exploring-an-nginx-deployment)
 
