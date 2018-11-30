@@ -67,6 +67,9 @@ Select [+ Create]; Select tab - [Create from file]; Select [...] to choose YAML 
 
 ![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
 
+Success!
+![Sockshop Success](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5c_successful-deployment.png)
+
 ### Login to the Sock Shop website
 
 Find the public IP for the DC/OS agent running the public kubelet...
@@ -74,4 +77,4 @@ Find the public IP for the DC/OS agent running the public kubelet...
 
 http://\<DCOS PUBLIC IP\>:30001
 
-![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
+![Sockshop Page](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5d_sockshop-page.png)
