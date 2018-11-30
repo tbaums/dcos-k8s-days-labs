@@ -89,7 +89,7 @@ Use the public IP for the other DC/OS public agent
 
 http://\<DCOS PUBLIC IP\>:30001
 
-![Sockshop Page](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5d_sockshop-page.png)
+![Sockshop Page](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5d_sockshop-pageB.png)
 
 You have now deployed a full website in Kubernetes running on Mesosphere DC/OS.
 
