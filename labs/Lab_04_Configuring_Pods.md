@@ -1,6 +1,6 @@
 ## Lab 4 - Configuring Pods
 
-Note: This content is from the Kubernetes [documetation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#creating-and-exploring-an-nginx-deployment)
+Note: This content is from the Kubernetes [documentation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#creating-and-exploring-an-nginx-deployment)
 
 ## Use Kubernetes-cluster1
 
