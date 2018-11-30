@@ -94,9 +94,9 @@ http://\<DCOS PUBLIC IP\>:30001
 You have now deployed a full website in Kubernetes running on Mesosphere DC/OS.
 
 This website includes 13 containers:
-- 3 Mongo DBs (Cart database, Orders database, User database)
+- 4 Mongo DBs (Cart database, Orders database, User databases)
 - 3 Java Apps (Cart app, Order app, Shipping app)
-- 2 MySQL DBs (Catalogue database)
+- MySQL DB (Catalogue database)
 - 4 Docker Containers (Catalogue app, Front-end app, Payment app, Queue-master app)
 - RabbitMQ
 
