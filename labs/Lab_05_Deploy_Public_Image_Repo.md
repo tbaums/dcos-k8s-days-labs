@@ -33,7 +33,8 @@ kubectl proxy --port=8002
 It is possible to create an app from the Kubernetes Dashboard. 
 #### Step 1. Download the 2 Sock-shop YAML files
 
-Give download location...
+Download from https://github.com/microservices-demo/microservices-demo/blob/master/deploy/kubernetes/complete-demo.yaml
+and save as 'sockshop-deploy.yaml'
 
 #### Step 2. For this application, we need to first create a namespace within the Kubernetes cluster.
 
