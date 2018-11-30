@@ -6,7 +6,7 @@ Ensure that you have connectivity to Kubernetes-cluster2 by pointing your browse
 
 http://127.0.0.1:8002/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 
-If the above URL does not work, then the proxy needs to be restarted.  We need to ensure that we have selected the kubernetes-cluster2.  To do this:
+If the above URL does not work, then the kubectl proxy needs to be restarted.  We need to ensure that we have selected the kubernetes-cluster2.  To do this:
 
 ```
 $ kubectl config get-contexts
