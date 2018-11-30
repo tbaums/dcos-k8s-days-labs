@@ -62,7 +62,7 @@ Save locally as 'sockshop-deploy.yaml'
 1. Select [+ Create] 
 2. Select tab - [Create from file]
 3. Select [...] to choose YAML or JSON
-4. Select the lab5a_sockshop-namespace.yaml file
+4. Select the sockshop-namespace.yaml file
 5. Select Upload
 
 ![Sockshop Namespace](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5a_sockshop-namespace.png)
@@ -74,7 +74,7 @@ The sock-shop namespace is selected by default, but ensure that you are within i
 1. Select [+ Create] 
 2. Select tab - [Create from file]
 3. Select [...] to choose YAML or JSON
-4. Select the lab5a_sockshop-deploy.yaml file
+4. Select the sockshop-deploy.yaml file
 5. Select Upload
 
 ![Sockshop Deploy](https://github.com/jdyver/dcos-k8s-days-labs/blob/master/screenshots/lab5b_sockshop-deploy.png)
