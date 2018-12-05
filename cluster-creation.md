@@ -11,14 +11,16 @@ This needs to be done first and once to set the default AWS Region and to add th
 ```
 ssh-add ~/.ssh/phlk8sdcosday
 export AWS_DEFAULT_REGION="us-east-1"
+```
 
 ## For Each Cluster Set to be built
 
-Navigate to the named cluster (Alpha, Bravo, Charlie, etc.) directory and into the multi-dcos-cluster directory.  Ensure the `variables.tf`has been modified according to the desired size and number of each node type and that the cluster name is unique to the AWS region to which you are de[ploying. 
+Navigate to the named cluster (Alpha, Bravo, Charlie, etc.) directory and into the multi-dcos-cluster directory.  Ensure the `variables.tf`has been modified according to the desired size and number of each node type and that the cluster name is unique to the AWS region to which you are deploying. 
 
 Authenticate with AWS
 
 Execute the following set of commands as a single copy, paste, run.
+
 ```
 bash build.sh <n>
 terraform init -upgrade=true
@@ -26,7 +28,7 @@ terraform plan -out plan.out
 terraform apply plan.out
 ```
 
-after about 15 minutes you should have a set of DC/OS Clusters.
+After about 15 minutes you should have a set of DC/OS Clusters.
 
 Verify that it looks, feels, and tastes how you would like.
 Once you have verified that this is what you want, go ahead and `terraform destroy`
