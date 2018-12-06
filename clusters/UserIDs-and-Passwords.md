@@ -13,7 +13,7 @@ URL:      http://Bootstrap-Node-IP:4200
 
 User:     centos
 
-Password: 3xc31510r!  
+Password: phlk8sdcosday  
 
 
 ### Grafanna Login
