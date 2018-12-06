@@ -1,0 +1,30 @@
+
+[cluster]
+phlkilo-3
+
+[cluster-address]
+phlkilo-3-599311524.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.186.113.236
+
+[masters]
+50.112.43.219
+
+[private-agents]
+54.201.124.125
+52.41.134.227
+54.184.159.66
+34.212.28.218
+34.208.189.27
+
+[public-agents]
+54.185.54.22
+54.201.186.200
+
+[public-agent-lb]
+ext-phlkilo-3-191609417.us-west-2.elb.amazonaws.com
+

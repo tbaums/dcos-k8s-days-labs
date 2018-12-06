@@ -1,0 +1,30 @@
+
+[cluster]
+phlhotel-1
+
+[cluster-address]
+phlhotel-1-1316959818.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.203.114.158
+
+[masters]
+54.202.4.143
+
+[private-agents]
+52.89.107.140
+54.184.196.34
+34.219.20.92
+34.222.158.86
+52.41.132.242
+
+[public-agents]
+34.218.226.223
+34.220.6.200
+
+[public-agent-lb]
+ext-phlhotel-1-603623365.us-west-2.elb.amazonaws.com
+

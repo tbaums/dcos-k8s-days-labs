@@ -1,0 +1,30 @@
+
+[cluster]
+phlfoxtrot-2
+
+[cluster-address]
+phlfoxtrot-2-605513072.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.173.157.210
+
+[masters]
+18.232.123.191
+
+[private-agents]
+54.198.43.135
+18.204.245.11
+54.224.157.228
+3.80.79.101
+52.201.172.10
+
+[public-agents]
+18.215.233.208
+100.27.37.209
+
+[public-agent-lb]
+ext-phlfoxtrot-2-1961856328.us-east-1.elb.amazonaws.com
+

@@ -1,0 +1,30 @@
+
+[cluster]
+phlgulf-2
+
+[cluster-address]
+phlgulf-2-104416921.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.212.86.141
+
+[masters]
+54.187.231.15
+
+[private-agents]
+34.214.59.36
+54.188.159.26
+18.237.44.42
+34.219.125.173
+34.217.94.235
+
+[public-agents]
+34.209.216.136
+34.222.8.247
+
+[public-agent-lb]
+ext-phlgulf-2-1038665741.us-west-2.elb.amazonaws.com
+

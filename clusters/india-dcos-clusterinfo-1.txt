@@ -1,0 +1,30 @@
+
+[cluster]
+phlindia-1
+
+[cluster-address]
+phlindia-1-1789307556.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.217.211.163
+
+[masters]
+52.42.106.189
+
+[private-agents]
+52.36.15.76
+34.217.191.226
+34.213.43.157
+18.236.145.68
+34.220.16.141
+
+[public-agents]
+34.219.61.244
+54.245.14.104
+
+[public-agent-lb]
+ext-phlindia-1-1116202746.us-west-2.elb.amazonaws.com
+

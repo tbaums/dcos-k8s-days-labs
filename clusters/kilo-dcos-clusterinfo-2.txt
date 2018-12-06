@@ -1,0 +1,30 @@
+
+[cluster]
+phlkilo-2
+
+[cluster-address]
+phlkilo-2-678416730.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.217.120.223
+
+[masters]
+34.217.32.25
+
+[private-agents]
+52.32.37.253
+54.214.220.34
+34.220.251.37
+34.216.102.195
+34.220.176.33
+
+[public-agents]
+54.200.7.54
+34.219.197.5
+
+[public-agent-lb]
+ext-phlkilo-2-764116065.us-west-2.elb.amazonaws.com
+

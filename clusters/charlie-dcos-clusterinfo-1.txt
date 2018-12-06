@@ -1,0 +1,30 @@
+
+[cluster]
+phlcharlie-1
+
+[cluster-address]
+phlcharlie-1-744266277.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.204.79.121
+
+[masters]
+52.201.252.2
+
+[private-agents]
+54.197.217.101
+107.23.82.146
+54.86.219.135
+54.144.242.242
+18.234.106.25
+
+[public-agents]
+18.232.96.204
+34.206.1.135
+
+[public-agent-lb]
+ext-phlcharlie-1-628341850.us-east-1.elb.amazonaws.com
+

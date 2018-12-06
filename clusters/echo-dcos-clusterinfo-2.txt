@@ -1,0 +1,30 @@
+
+[cluster]
+phlecho-2
+
+[cluster-address]
+phlecho-2-1499810085.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.207.103.196
+
+[masters]
+54.91.145.98
+
+[private-agents]
+18.234.176.123
+34.232.51.14
+18.212.184.28
+54.205.55.225
+54.236.48.93
+
+[public-agents]
+54.172.20.201
+100.27.37.83
+
+[public-agent-lb]
+ext-phlecho-2-2035359642.us-east-1.elb.amazonaws.com
+

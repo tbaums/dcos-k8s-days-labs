@@ -1,0 +1,30 @@
+
+[cluster]
+phlbravo-3
+
+[cluster-address]
+phlbravo-3-928046240.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+54.221.153.232
+
+[masters]
+54.91.246.200
+
+[private-agents]
+18.232.117.65
+34.200.241.29
+54.144.150.199
+54.173.7.141
+52.5.131.16
+
+[public-agents]
+34.207.138.174
+54.160.18.14
+
+[public-agent-lb]
+ext-phlbravo-3-431765075.us-east-1.elb.amazonaws.com
+

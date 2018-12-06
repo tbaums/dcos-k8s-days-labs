@@ -1,0 +1,30 @@
+
+[cluster]
+phllima-2
+
+[cluster-address]
+phllima-2-2074390809.us-west-2.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+34.221.178.145
+
+[masters]
+34.208.77.73
+
+[private-agents]
+34.221.178.151
+54.212.116.138
+34.212.169.69
+54.186.194.2
+18.237.4.233
+
+[public-agents]
+54.212.56.44
+54.213.3.61
+
+[public-agent-lb]
+ext-phllima-2-1577135643.us-west-2.elb.amazonaws.com
+

@@ -1,0 +1,30 @@
+
+[cluster]
+phldelta-3
+
+[cluster-address]
+phldelta-3-1663916591.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+18.209.173.238
+
+[masters]
+18.234.67.185
+
+[private-agents]
+34.238.168.187
+34.201.25.147
+18.212.178.167
+3.80.119.12
+52.205.231.127
+
+[public-agents]
+100.24.51.192
+34.200.212.65
+
+[public-agent-lb]
+ext-phldelta-3-1400311643.us-east-1.elb.amazonaws.com
+

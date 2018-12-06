@@ -1,0 +1,30 @@
+
+[cluster]
+phlalpha-3
+
+[cluster-address]
+phlalpha-3-1953279055.us-east-1.elb.amazonaws.com
+
+User: bootstrapuser
+Pass: deleteme
+
+[bootstrap]
+35.175.250.58
+
+[masters]
+54.83.130.221
+
+[private-agents]
+174.129.130.249
+34.201.21.54
+54.167.77.7
+54.165.115.155
+54.172.229.158
+
+[public-agents]
+52.202.57.69
+18.209.231.230
+
+[public-agent-lb]
+ext-phlalpha-3-2001671217.us-east-1.elb.amazonaws.com
+
